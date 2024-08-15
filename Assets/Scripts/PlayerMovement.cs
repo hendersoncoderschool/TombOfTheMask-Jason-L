@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveDirection;
     private bool isMoving;
     private bool facingRight = true;
-    private bool facingUp = true;
     private Rigidbody2D rb;
     int layerMask;
     void Start()
@@ -23,25 +22,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 moveDirection=Vector2.up;
                 isMoving=true;
-                if (facingUp)
-                {
-                    facingUp = !facingUp;
-                    Vector2 theScale = transform.localScale;
-                    theScale.y *= -1;
-                    transform.localScale = theScale;
-                }
             }
             else if(Input.GetKeyDown(KeyCode.DownArrow))
             {
                 moveDirection=Vector2.down;
-                isMoving=true;
-                if (!facingUp)
-                {
-                    facingUp = !facingUp;
-                    Vector2 theScale = transform.localScale;
-                    theScale.y *= -1;
-                    transform.localScale = theScale;
-                }
+                isMoving = true;
             }
             else if(Input.GetKeyDown(KeyCode.LeftArrow))
             {
