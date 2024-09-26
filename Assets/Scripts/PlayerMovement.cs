@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
+    private Animator animator;
     public float moveSpeed;
     private Vector2 moveDirection;
     private bool isMoving;
     private bool facingRight = true;
     private Rigidbody2D rb;
     int layerMask;
+    public bool playerAlive=true;
     void Start()
     {
         rb=GetComponent<Rigidbody2D>();
         layerMask = LayerMask.GetMask("WallLayer");
+        animator=GetComponent<Animator>();
     }
     void Update()
     {
-        if(!isMoving)
+        if(!isMoving&&playerAlive)
         {
             if(Input.GetKeyDown(KeyCode.UpArrow))
             {
@@ -89,5 +92,12 @@ public class PlayerMovement : MonoBehaviour
             angle = 90f;
         }
         transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
+    public void PlayerDeath()
+    {
+        animator.SetTrigger("Explode");
+        isMoving=false;
+        rb.velocity*=0f;
+        playerAlive=false;
     }
 }
