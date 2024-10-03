@@ -8,7 +8,7 @@ public class Spike : MonoBehaviour
     GameObject player;
     IEnumerator resetScene()
     {
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.6f);
         SceneManager.LoadScene(manager.GetComponent<GameManager>().currentScene);
     }
     void Start()
