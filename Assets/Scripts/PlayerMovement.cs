@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
@@ -11,8 +12,10 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     int layerMask;
     public bool playerAlive=true;
+    GameObject manager;
     void Start()
     {
+        manager=GameObject.Find("GameManager");
         rb=GetComponent<Rigidbody2D>();
         layerMask = LayerMask.GetMask("WallLayer");
         animator=GetComponent<Animator>();
@@ -99,5 +102,11 @@ public class PlayerMovement : MonoBehaviour
         isMoving=false;
         rb.velocity*=0f;
         playerAlive=false;
+        StartCoroutine(resetScene());
+    }
+    IEnumerator resetScene()
+    {
+        yield return new WaitForSeconds(0.6f);
+        SceneManager.LoadScene(manager.GetComponent<GameManager>().currentScene);
     }
 }
