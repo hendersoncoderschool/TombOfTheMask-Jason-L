@@ -22,19 +22,20 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+        animator.SetBool("isMoving", isMoving);
         if(!isMoving&&playerAlive)
         {
-            if(Input.GetKeyDown(KeyCode.UpArrow))
+            if(Input.GetKey(KeyCode.UpArrow))
             {
                 moveDirection=Vector2.up;
                 isMoving=true;
             }
-            else if(Input.GetKeyDown(KeyCode.DownArrow))
+            else if(Input.GetKey(KeyCode.DownArrow))
             {
                 moveDirection=Vector2.down;
                 isMoving = true;
             }
-            else if(Input.GetKeyDown(KeyCode.LeftArrow))
+            else if(Input.GetKey(KeyCode.LeftArrow))
             {
                 moveDirection=Vector2.left;
                 isMoving=true;
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
                     transform.localScale = theScale;
                 }
             }
-            else if(Input.GetKeyDown(KeyCode.RightArrow))
+            else if(Input.GetKey(KeyCode.RightArrow))
             {
                 moveDirection=Vector2.right;
                 isMoving=true;
