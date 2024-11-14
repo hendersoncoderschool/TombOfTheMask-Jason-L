@@ -29,11 +29,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 moveDirection=Vector2.up;
                 isMoving=true;
+                RotatePlayerToWall(moveDirection);
             }
             else if(Input.GetKey(KeyCode.DownArrow))
             {
                 moveDirection=Vector2.down;
                 isMoving = true;
+                RotatePlayerToWall(moveDirection);
             }
             else if(Input.GetKey(KeyCode.LeftArrow))
             {
@@ -46,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
                     theScale.x *= -1;
                     transform.localScale = theScale;
                 }
+                RotatePlayerToWall(moveDirection);
             }
             else if(Input.GetKey(KeyCode.RightArrow))
             {
@@ -58,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
                     theScale.x *= -1;
                     transform.localScale = theScale;
                 }
+                RotatePlayerToWall(moveDirection);
             }
         }
     }
@@ -72,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity=Vector2.zero;
                 transform.position=hit.point-(Vector2)moveDirection*0.5f;
                 isMoving=false;
-                RotatePlayerToWall(moveDirection);
             }
         }
     }
