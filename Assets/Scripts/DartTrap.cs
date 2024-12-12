@@ -4,13 +4,21 @@ using UnityEngine;
 public class DartTrap : MonoBehaviour
 {
     public GameObject dart;
+    public Sprite firing;
+    public Sprite idle;
     void Start()
     {
-        InvokeRepeating("shoot",0f,1.2f);
+        StartCoroutine (shoot());
     }
-    void shoot()
+    IEnumerator shoot()
     {
-        GameObject projectile = Instantiate(dart,transform.position+-transform.right,Quaternion.identity);
-        projectile.transform.Rotate(transform.forward * 90f);
+        while(true)
+        {
+        yield return new WaitForSeconds(1f);
+        GetComponent<SpriteRenderer>().sprite=firing;
+        GameObject projectile = Instantiate(dart,transform.position+-transform.right,transform.rotation);
+        yield return new WaitForSeconds(0.2f);
+        GetComponent<SpriteRenderer>().sprite=idle;
+        }
     }
 }

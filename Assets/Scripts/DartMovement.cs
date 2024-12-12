@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 public class DartMovement : MonoBehaviour
 {
-    //private int layerMask;
-    void Start()
-    {
-        /*layerMask = LayerMask.GetMask("WallLayer");
-        print(layerMask);*/
-    }
     void Update()
     {
         transform.Translate(-Vector2.right*Time.deltaTime*20f);
