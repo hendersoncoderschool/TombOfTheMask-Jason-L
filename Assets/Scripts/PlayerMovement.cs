@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
     public float moveSpeed;
-    private Vector2 moveDirection;
+    public Vector2 moveDirection;
     private bool isMoving;
     private bool facingRight = true;
     private Rigidbody2D rb;
@@ -112,5 +112,33 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(0.6f);
         SceneManager.LoadScene(manager.GetComponent<GameManager>().currentScene);
+    }
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("BouncePad"))
+        {
+            switch(col.gameObject.transform.eulerAngles.z)
+            {
+                case 0f:
+                    if(moveDirection==Vector2.right)moveDirection=Vector2.up;
+                    else moveDirection=-Vector2.right;
+                    break;
+                case 90f:
+                    if(moveDirection==Vector2.right)moveDirection=Vector2.down;
+                    else moveDirection=-Vector2.right;
+                    break;
+                case 180f:
+                    if(moveDirection==Vector2.left)moveDirection=Vector2.down;
+                    else moveDirection=Vector2.right;
+                    break;
+                case 270f:
+                    if(moveDirection==Vector2.left)moveDirection=Vector2.up;
+                    else moveDirection=Vector2.right;
+                    break;
+            }
+            transform.position=(Vector2)col.gameObject.transform.position+(Vector2)moveDirection*0.2f;
+            isMoving=true;
+            RotatePlayerToWall(moveDirection);
+        }
     }
 }
