@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     int layerMask;
     public bool playerAlive=true;
+    public GameObject SawMovementPoint;
     GameObject manager;
     void Start()
     {
@@ -76,6 +77,10 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity=Vector2.zero;
                 transform.position=hit.point-(Vector2)moveDirection*0.5f;
                 isMoving=false;
+                //GameObject sawMovementPoint=Instantiate(SawMovementPoint,transform.position,transform.rotation);
+                if(manager.GetComponent<GameManager>().saw.GetComponent<Saw>().isTriggered)
+                    manager.GetComponent<GameManager>().saw.GetComponent<Saw>().destinations.Enqueue(transform.position);
+                //print(manager.GetComponent<GameManager>().saw.GetComponent<Saw>().destinations.Peek());
             }
         }
     }

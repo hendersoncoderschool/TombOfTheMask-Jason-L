@@ -17,7 +17,6 @@ public class BatMove : MonoBehaviour
     {
         if(moving)
         {
-            print(target.position);
             transform.position=Vector2.MoveTowards(transform.position,target.position,speed*Time.deltaTime);
             if(Vector2.Distance(transform.position,target.position)<0.1f)
             {
@@ -35,6 +34,11 @@ public class BatMove : MonoBehaviour
         {
             target=point1.transform;
         }
-        yield return new WaitForSeconds(0.5f);
+        moving=false;
+        Vector2 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+        yield return new WaitForSeconds(0.7f);
+        moving=true;
     }
 }

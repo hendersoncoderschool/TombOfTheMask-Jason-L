@@ -103,7 +103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1300
+  moveDirection: {x: 0, y: 0}
   playerAlive: 1
+  SawMovementPoint: {fileID: 4910017483744022524, guid: 87a482f4f378a7347a70552c05796c68, type: 3}
 --- !u!50 &7750703573005305927
 Rigidbody2D:
   serializedVersion: 4
