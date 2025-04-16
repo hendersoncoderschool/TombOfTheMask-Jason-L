@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dart
   - BouncePad
+  - Toggleable Wall
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ToggleableWall : MonoBehaviour
 {
-    //color 85, 255, 233
     public Sprite activeWall;
     void Start()
     {
@@ -19,6 +18,7 @@ public class ToggleableWall : MonoBehaviour
         if(col.gameObject.CompareTag("Player"))
         {
             gameObject.layer=LayerMask.NameToLayer("WallLayer");
+            GetComponent<SpriteRenderer>().sprite = activeWall;
         }
     }
 }

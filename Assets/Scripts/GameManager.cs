@@ -5,13 +5,5 @@ public class GameManager : MonoBehaviour
 {
     public int collectedStars=0;
     public string currentScene;
-    public GameObject saw;
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-        
-    }
+    public List<GameObject> saws;
 }
