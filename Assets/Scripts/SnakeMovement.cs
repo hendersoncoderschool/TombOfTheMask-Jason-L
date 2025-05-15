@@ -7,6 +7,6 @@ public class SnakeMovement : MonoBehaviour
     public float speed;
     void Update()
     {
-        transform.Translate(-Vector2.up*speed*Time.deltaTime);
+        transform.Translate(Vector2.right*speed*Time.deltaTime);
     }
 }

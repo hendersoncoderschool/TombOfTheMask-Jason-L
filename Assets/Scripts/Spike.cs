@@ -12,7 +12,7 @@ public class Spike : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            player.GetComponent<PlayerMovement>().PlayerDeath();
+            if(player != null) player.GetComponent<PlayerMovement>().PlayerDeath();
             if(gameObject.CompareTag("Dart"))
             {
                 Destroy(gameObject);
