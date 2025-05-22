@@ -157,7 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &2772806048512863060
 Rigidbody2D:
   serializedVersion: 4
@@ -173,7 +175,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -342,7 +344,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &1564147775675197341
 Rigidbody2D:
   serializedVersion: 4
@@ -358,7 +362,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -442,7 +446,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 14
+  active: 0
 --- !u!50 &8905516134285740916
 Rigidbody2D:
   serializedVersion: 4
@@ -627,7 +633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &729030038955612476
 Rigidbody2D:
   serializedVersion: 4
@@ -643,7 +651,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -812,7 +820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &6266677153311844010
 Rigidbody2D:
   serializedVersion: 4
@@ -828,7 +838,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -997,7 +1007,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &9051126724949928927
 Rigidbody2D:
   serializedVersion: 4
@@ -1013,7 +1025,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1182,7 +1194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &3779558003075179085
 Rigidbody2D:
   serializedVersion: 4
@@ -1198,7 +1212,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1367,7 +1381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &4289520111980206412
 Rigidbody2D:
   serializedVersion: 4
@@ -1383,7 +1399,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1552,7 +1568,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &2765689093200418278
 Rigidbody2D:
   serializedVersion: 4
@@ -1568,7 +1586,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1737,7 +1755,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &6959599093139420967
 Rigidbody2D:
   serializedVersion: 4
@@ -1753,7 +1773,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1922,7 +1942,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &1791742278043709438
 Rigidbody2D:
   serializedVersion: 4
@@ -1938,7 +1960,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2107,7 +2129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &5481036216584894804
 Rigidbody2D:
   serializedVersion: 4
@@ -2123,7 +2147,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2292,7 +2316,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &7863350586038581313
 Rigidbody2D:
   serializedVersion: 4
@@ -2308,7 +2334,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2499,7 +2525,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &6626327612856966041
 Rigidbody2D:
   serializedVersion: 4
@@ -2515,7 +2543,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2684,7 +2712,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &7948474605252701185
 Rigidbody2D:
   serializedVersion: 4
@@ -2700,7 +2730,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2869,7 +2899,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &5599901701423353501
 Rigidbody2D:
   serializedVersion: 4
@@ -2885,7 +2917,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3054,7 +3086,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &2721339586866722734
 Rigidbody2D:
   serializedVersion: 4
@@ -3070,7 +3104,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3239,7 +3273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &7780046784284072810
 Rigidbody2D:
   serializedVersion: 4
@@ -3255,7 +3291,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3424,7 +3460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &4417601606449129352
 Rigidbody2D:
   serializedVersion: 4
@@ -3440,7 +3478,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3609,7 +3647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &6852657893366977207
 Rigidbody2D:
   serializedVersion: 4
@@ -3625,7 +3665,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3794,7 +3834,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &1176292227530242026
 Rigidbody2D:
   serializedVersion: 4
@@ -3810,7 +3852,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3979,7 +4021,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &1328122244336834070
 Rigidbody2D:
   serializedVersion: 4
@@ -3995,7 +4039,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4164,7 +4208,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &1290877281706069320
 Rigidbody2D:
   serializedVersion: 4
@@ -4180,7 +4226,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4349,7 +4395,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &2713344877033892652
 Rigidbody2D:
   serializedVersion: 4
@@ -4365,7 +4413,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4534,7 +4582,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &8949471478438122904
 Rigidbody2D:
   serializedVersion: 4
@@ -4550,7 +4600,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4719,7 +4769,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &463987304419853521
 Rigidbody2D:
   serializedVersion: 4
@@ -4735,7 +4787,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4904,7 +4956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &709178967175235750
 Rigidbody2D:
   serializedVersion: 4
@@ -4920,7 +4974,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5089,7 +5143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a56f0c4c978034c8fa400519a2381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   speed: 12
+  active: 0
 --- !u!50 &4864380379065196230
 Rigidbody2D:
   serializedVersion: 4
@@ -5105,7 +5161,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

@@ -11,7 +11,7 @@ public class LavaMove : MonoBehaviour
     void Start()
     {
         cam=GameObject.Find("Main Camera");
-        rend = GetComponent<Renderer>();
+        rend = GetComponent<SpriteRenderer>();
         StartCoroutine(ChangeColor());
     }
     void Update()
