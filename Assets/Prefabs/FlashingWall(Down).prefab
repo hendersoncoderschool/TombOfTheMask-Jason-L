@@ -97,5 +97,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4702fc52b79398f46959545400227134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstColor: {r: 0, g: 0, b: 0, a: 0}
-  secondColor: {r: 0, g: 0.9607844, b: 0.9607844, a: 0}
+  firstColor: {r: 1, g: 1, b: 1, a: 1}
+  secondColor: {r: 0.39215687, g: 1, b: 1, a: 1}

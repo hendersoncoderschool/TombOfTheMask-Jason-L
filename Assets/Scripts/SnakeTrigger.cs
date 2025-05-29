@@ -8,14 +8,15 @@ public class SnakeTrigger : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            var SnakeParts =FindObjectsByType<SnakeMovement>(FindObjectsSortMode.None);
-            foreach(var part in SnakeParts)
+            var tiles = FindObjectsByType<TileFlashingEffect>(FindObjectsSortMode.None);
+            foreach (var tile in tiles)
             {
-                if(part.id==id)
+                if(tile.id==id)
                 {
-                    part.active = true;
+                    tile.StartFlash();
                 }
             }
+            Destroy(gameObject);
         }
     }
 }

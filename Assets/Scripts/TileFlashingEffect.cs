@@ -6,22 +6,33 @@ public class TileFlashingEffect : MonoBehaviour
     SpriteRenderer rend;
     public Color firstColor;
     public Color secondColor;
+    public int id;
     void Start()
     {
         rend = GetComponent<SpriteRenderer>();
+    }
+    public void StartFlash()
+    {
         StartCoroutine(ChangeColor());
     }
-    IEnumerator ChangeColor()
+    public IEnumerator ChangeColor()
     {
         for (int i = 0; i < 3; i++)
         {
             print("flash");
             rend.color = firstColor;
-            //rend.material.SetColor("_Color", firstColor);
-            yield return new WaitForSeconds(0.12f);
+            yield return new WaitForSeconds(0.15f);
             rend.color = secondColor;
-            //rend.material.SetColor("_Color", secondColor);
-            yield return new WaitForSeconds(0.12f);
+            yield return new WaitForSeconds(0.15f);
+        }
+        rend.color = firstColor;
+        var SnakeParts = FindObjectsByType<SnakeMovement>(FindObjectsSortMode.None);
+        foreach (var part in SnakeParts)
+        {
+            if (part.id == id)
+            {
+                part.active = true;
+            }
         }
     }
 }
