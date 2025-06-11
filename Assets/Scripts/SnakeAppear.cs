@@ -5,7 +5,6 @@ public class SnakeAppear : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
         if(other.CompareTag("SnakeSegment"))
         {
             other.GetComponent<SpriteRenderer>().enabled = true;
