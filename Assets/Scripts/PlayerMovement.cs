@@ -77,10 +77,8 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity=Vector2.zero;
                 transform.position=hit.point-(Vector2)moveDirection*0.5f;
                 isMoving=false;
-                print(manager.GetComponent<GameManager>().saws.Count);
                 foreach (GameObject saw in manager.GetComponent<GameManager>().saws)
                 {
-                    print("hello");
                     if (saw != null && saw.GetComponent<Saw>().isTriggered)
                         saw.GetComponent<Saw>().destinations.Enqueue(transform.position);
                 }

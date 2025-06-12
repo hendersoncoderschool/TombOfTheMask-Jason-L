@@ -19,7 +19,6 @@ public class TileFlashingEffect : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            print("flash");
             rend.color = firstColor;
             yield return new WaitForSeconds(0.15f);
             rend.color = secondColor;
