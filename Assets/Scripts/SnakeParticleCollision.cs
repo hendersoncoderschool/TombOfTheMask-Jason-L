@@ -11,13 +11,15 @@ public class SnakeParticleCollision : MonoBehaviour
     {
         SnakeHead = GameObject.Find("SnakeHead");
         SnakeTail = GameObject.Find("SnakeTail");
+        GetComponent<ParticleSystem>().Stop();
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         print("collision");
         if (other.gameObject == SnakeHead)
         {
-            hitSnake = true;
+            //hitSnake = true;
+            GetComponent<ParticleSystem>().Play();
             print("hitsnakehead");
         }
     }
@@ -26,7 +28,8 @@ public class SnakeParticleCollision : MonoBehaviour
         print("exitcollision");
         if (other.gameObject == SnakeTail)
         {
-            hitSnake = false;
+            //hitSnake = false;
+            GetComponent<ParticleSystem>().Stop();
             print("exitsnaketail");
         }
     }
@@ -35,12 +38,12 @@ public class SnakeParticleCollision : MonoBehaviour
         if (hitSnake)
         {
             //gameObject.GetComponent<ParticleSystem>().SetActive(true);
-            //gameObject.ParticleSystem.Stop();
+            //GetComponent<ParticleSystem>().Stop();
         }
         else
         {
             //gameObject.GetComponent<ParticleSystem>().SetActive(false);
-            //gameObject.ParticleSystem.Play();
+            //GetComponent<ParticleSystem>().Play();
         }
     }
 }
