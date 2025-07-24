@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     int layerMask;
     public bool playerAlive=true;
     public GameObject SawMovementPoint;
+    private Vector3 PreviousPosition=Vector3.zero;
     GameObject manager;
     void Start()
     {
@@ -68,19 +69,22 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if(isMoving)
+        if (isMoving)
         {
-            rb.velocity=moveDirection*moveSpeed*Time.fixedDeltaTime;
-            RaycastHit2D hit=Physics2D.Raycast(transform.position,moveDirection,0.6f,layerMask);
-            if(hit.collider!=null)
+            rb.velocity = moveDirection * moveSpeed * Time.fixedDeltaTime;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, 0.6f, layerMask);
+            if (hit.collider != null)
             {
-                rb.velocity=Vector2.zero;
-                transform.position=hit.point-(Vector2)moveDirection*0.5f;
-                isMoving=false;
+                rb.velocity = Vector2.zero;
+                transform.position = hit.point - (Vector2)moveDirection * 0.5f;
+                isMoving = false;
                 foreach (GameObject saw in manager.GetComponent<GameManager>().saws)
                 {
-                    if (saw != null && saw.GetComponent<Saw>().isTriggered)
+                    if (saw != null && saw.GetComponent<Saw>().isTriggered && PreviousPosition != transform.position)
+                    {
                         saw.GetComponent<Saw>().destinations.Enqueue(transform.position);
+                        PreviousPosition = transform.position;
+                    }
                 }
             }
         }
