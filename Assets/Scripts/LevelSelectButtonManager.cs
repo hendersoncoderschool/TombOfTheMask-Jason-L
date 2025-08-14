@@ -8,4 +8,8 @@ public class LevelSelectButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level"+levelnumber.ToString());
     }
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }

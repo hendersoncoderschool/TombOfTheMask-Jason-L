@@ -80,10 +80,10 @@ public class PlayerMovement : MonoBehaviour
                 isMoving = false;
                 foreach (GameObject saw in manager.GetComponent<GameManager>().saws)
                 {
-                    if (saw != null && saw.GetComponent<Saw>().isTriggered && PreviousPosition != transform.position)
+                    if (saw != null && saw.GetComponent<Saw>().isTriggered/* && PreviousPosition != transform.position*/)
                     {
                         saw.GetComponent<Saw>().destinations.Enqueue(transform.position);
-                        PreviousPosition = transform.position;
+                        //PreviousPosition = transform.position;
                     }
                 }
             }
