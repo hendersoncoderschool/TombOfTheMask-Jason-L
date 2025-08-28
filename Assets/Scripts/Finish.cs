@@ -20,7 +20,7 @@ public class Finish : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            int levelNum=int.Parse(GameObject.Find("GameManager").GetComponent<GameManager>().currentScene[5].ToString());
+            int levelNum=int.Parse(GameObject.Find("GameManager").GetComponent<GameManager>().currentScene.Substring(5));
             levelManager.FurthestLevel = Mathf.Max(levelNum,levelManager.FurthestLevel);
             levelManager.Stars[levelNum - 1] = Mathf.Max(gameManager.collectedStars,levelManager.Stars[levelNum-1]);
             SaveGame();

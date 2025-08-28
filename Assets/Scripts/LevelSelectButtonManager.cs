@@ -4,9 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class LevelSelectButtonManager : MonoBehaviour
 {
+    public LevelManager levelManager;
+    void Start()
+    {
+        levelManager=GameObject.Find("LevelManager").GetComponent<LevelManager>();
+    }
     public void LoadLevel(int levelnumber)
     {
-        SceneManager.LoadScene("Level"+levelnumber.ToString());
+        if(levelManager.FurthestLevel+1>=levelnumber)
+        {
+            SceneManager.LoadScene("Level"+levelnumber.ToString());
+        }
     }
     public void LoadMainMenu()
     {
