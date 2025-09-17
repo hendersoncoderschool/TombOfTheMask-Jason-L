@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using MiniJSON;
 using System.IO;
+using System.Runtime.Serialization;
+
 [System.Serializable]
-public class GameData
-{
-    public int FurthestLevel;
-    public int[] Stars;
-}
 
 public class LevelManager : MonoBehaviour
 {
@@ -27,12 +24,15 @@ public class LevelManager : MonoBehaviour
         if (File.Exists(saveFile))
         {
             string json = File.ReadAllText(saveFile);
-            GameData loadedGameData = JsonUtility.FromJson<GameData>(json);
-            print(loadedGameData.Stars);
-    
-            //FurthestLevel = int.Parse(json.Substring(24));
-
-            //print(FurthestLevel);
+            var dict = Json.Deserialize(json) as Dictionary<string, object>;
+            long result = (long)dict["FurthestLevel"];
+            FurthestLevel = (int)result;
+            List<object> tmp = (List<object>)dict["Stars"];
+            for (int i=0; i<10; i++)
+            {
+                long num = (long)tmp[i];
+                Stars[i] = (int)num;
+            }
         }
         DontDestroyOnLoad(gameObject);
     }
