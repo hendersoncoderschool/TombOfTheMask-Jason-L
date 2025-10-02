@@ -11,7 +11,7 @@ public class MainMenuButtonManager : MonoBehaviour
     }
     public void LoadFurthestLevel()
     {
-        SceneManager.LoadScene("Level" + (levelManager.FurthestLevel+1).ToString());
+        SceneManager.LoadScene("Level" + (Mathf.Min(10,levelManager.FurthestLevel+1)).ToString());
     }
     public void LoadLevelSelect()
     {

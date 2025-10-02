@@ -8,7 +8,7 @@ public class Spike : MonoBehaviour
     {
         player=GameObject.Find("Travelboy");
     }
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
         {
