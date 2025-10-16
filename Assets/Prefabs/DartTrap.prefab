@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 13f384219bc6e0f479268d8c9a48f470, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f96f1747756044a429045999223566d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,5 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dart: {fileID: 5606635816637143712, guid: cfd780de673bd2a4990ce6f7a77ce267, type: 3}
-  firing: {fileID: 21300000, guid: bf8d8c795a689954493c91b13554d090, type: 3}
-  idle: {fileID: 21300000, guid: 13f384219bc6e0f479268d8c9a48f470, type: 3}
+  firing: {fileID: 21300000, guid: 6f76f291073b3b94885141f1f59fcf32, type: 3}
+  idle: {fileID: 21300000, guid: f96f1747756044a429045999223566d2, type: 3}
